@@ -17,8 +17,10 @@ public class NumeroImpar {
             String number = String.valueOf(numero);
 
             digits1 = number.toCharArray();
+            if(digits1.length < 4)
+                System.out.println("O número precisa conter pelo menos 3 dígitos");
 
-        }while (digits1.length < 4);
+        }while (digits1.length < 3);
 
         int contador = 0;
         for(int i = 0; i < digits1.length; i++) {
